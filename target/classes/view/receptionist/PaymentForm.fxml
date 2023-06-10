@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="722.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.rec.PaymentFormController">
+   <children>
+      <TableView fx:id="tblPayment" layoutX="43.0" layoutY="54.0" prefHeight="578.0" prefWidth="1051.0">
+        <columns>
+          <TableColumn fx:id="colPayment_Id" prefWidth="181.0" text="Payment_Id" />
+            <TableColumn fx:id="colMember_Id" prefWidth="181.0" text="Member_Id" />
+            <TableColumn fx:id="colDescription" prefWidth="275.0" text="Description" />
+            <TableColumn fx:id="colDate" prefWidth="198.0" text="Date" />
+            <TableColumn fx:id="colAmount" prefWidth="214.0" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

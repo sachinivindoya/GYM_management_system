@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.AdminFormController">
+   <children>
+      <AnchorPane prefHeight="770.0" prefWidth="208.0" style="-fx-background-color: #abadaa;">
+         <children>
+            <JFXButton fx:id="btnEmployees" buttonType="RAISED" layoutX="25.0" layoutY="163.0" onAction="#btnEmployeesOnAction" prefHeight="48.0" prefWidth="160.0" ripplerFill="#fdfdff" style="-fx-background-color: #03394a;" text="EMPLOYEES" textFill="#fff4ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnPackages" buttonType="RAISED" layoutX="25.0" layoutY="236.0" onAction="#btnPackagesOnAction" prefHeight="48.0" prefWidth="160.0" ripplerFill="#fefffe" style="-fx-background-color: #03394a;" text="PACKAGES" textFill="#fff4ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnAccount" buttonType="RAISED" layoutX="25.0" layoutY="311.0" prefHeight="48.0" prefWidth="160.0" ripplerFill="#06dd0d" style="-fx-background-color: #03394a;" text="ACCOUNT" textFill="#fff4ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnEquipments" buttonType="RAISED" layoutX="25.0" layoutY="382.0" onAction="#btnEquipmentsOnAction" prefHeight="48.0" prefWidth="160.0" ripplerFill="#eff2ef" style="-fx-background-color: #03394a;" text="EQUIPMENTS" textFill="#fff4ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnReports" buttonType="RAISED" layoutX="25.0" layoutY="463.0" prefHeight="48.0" prefWidth="160.0" ripplerFill="#06dd0d" style="-fx-background-color: #03394a;" text="REPORTS" textFill="#fff4ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="25.0" layoutY="564.0" onAction="#btnLogOutOnAction" prefHeight="48.0" prefWidth="160.0" ripplerFill="#db0606" style="-fx-background-color: #db0606;" text="Log Out" textFill="#fff4ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnBack" layoutX="41.0" layoutY="49.0" onAction="#btnBackOnAction" prefHeight="84.0" prefWidth="119.0" style="-fx-background-color: #f7a759;" text=" " />
+            <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="75.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/back_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="208.0" prefHeight="51.0" prefWidth="1158.0" style="-fx-background-color: #0000ff;">
+         <children>
+            <Text fill="#fffafa" layoutX="117.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pawana Fitness Center - Gym Management System V 0.0.1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblDateTime" layoutX="898.0" layoutY="16.0" prefHeight="27.0" prefWidth="179.0" textFill="#f8f4f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AdminHome" layoutX="208.0" layoutY="51.0" prefHeight="722.0" prefWidth="1158.0" style="-fx-background-color: #adb2d3;">
+         <children>
+            <AnchorPane layoutX="763.0" layoutY="70.0" prefHeight="40.0" prefWidth="328.0" style="-fx-background-color: #ff0000;">
+               <children>
+                  <Text fill="#f8f3f3" layoutX="19.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBERSHIPS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="763.0" layoutY="116.0" prefHeight="307.0" prefWidth="328.0" style="-fx-background-color: #ffff00;">
+               <children>
+                  <Text fill="#121e12" layoutX="123.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gold Memebership">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#121e12" layoutX="124.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silver Membership">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#121e12" layoutX="115.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Browns Membership">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fitHeight="62.0" fitWidth="69.0" layoutX="24.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/Gold.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="87.0" fitWidth="65.0" layoutX="24.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/silver.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="62.0" fitWidth="65.0" layoutX="24.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/browns.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneNavigate" layoutX="208.0" layoutY="52.0" prefHeight="722.0" prefWidth="1158.0" />
+   </children>
+</AnchorPane>

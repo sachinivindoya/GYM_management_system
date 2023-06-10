@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="AdminHome" prefHeight="722.0" prefWidth="1158.0" style="-fx-background-color: #adb2d3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.admin.AdminHomeController">
+   <children>
+      <AnchorPane layoutX="763.0" layoutY="70.0" prefHeight="40.0" prefWidth="328.0" style="-fx-background-color: #0000ff;">
+         <children>
+            <Text fill="#f8f3f3" layoutX="19.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBERSHIPS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="763.0" layoutY="116.0" prefHeight="307.0" prefWidth="328.0" style="-fx-background-color: #ffff00;">
+         <children>
+            <Text fill="#121e12" layoutX="123.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gold Memebership">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fill="#121e12" layoutX="124.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silver Membership">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fill="#121e12" layoutX="115.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Browns Membership">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <ImageView fitHeight="62.0" fitWidth="69.0" layoutX="24.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assests/Gold.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="65.0" layoutX="24.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assests/silver.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="65.0" layoutX="24.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assests/browns.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

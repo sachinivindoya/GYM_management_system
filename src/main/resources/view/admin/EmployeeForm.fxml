@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="722.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.admin.EmployeeFormController">
+   <children>
+      <TableView fx:id="tblEmployee" layoutX="7.0" layoutY="121.0" prefHeight="566.0" prefWidth="1121.0">
+         <columns>
+            <TableColumn fx:id="colempid" prefWidth="99.0" text="Emp_Id" />
+            <TableColumn fx:id="colempname" prefWidth="215.0" text="Name" />
+            <TableColumn fx:id="colempaddress" prefWidth="244.0" text="Address" />
+            <TableColumn fx:id="colempnic" prefWidth="162.0" text="NIC" />
+            <TableColumn fx:id="colempcontact" prefWidth="150.0" text="Contact" />
+            <TableColumn fx:id="colemjoineddate" prefWidth="139.0" text="Joined_Date" />
+            <TableColumn fx:id="coloccupation" prefWidth="116.0" text="Occupation" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="598.0" layoutY="66.0" prefHeight="36.0" prefWidth="520.0" promptText="🔎 Search" />
+      <Button fx:id="btnAddEmp" layoutX="109.0" layoutY="61.0" mnemonicParsing="false" onAction="#btnAddEmpOnAction" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: #08e171;" text="+Add Employee" textFill="#170101">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="319.0" layoutY="61.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: #e009e0;" text="Update" textFill="#1e1d1d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="40.0" layoutX="332.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assests/update_icon.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="430.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pawana Gym Management System - All Right Reserved 2023">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

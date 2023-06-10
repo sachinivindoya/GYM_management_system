@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.SplashScreenController">
+   <children>
+      <ImageView fitHeight="253.0" fitWidth="520.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="loadRec1" arcHeight="5.0" arcWidth="5.0" fill="#eff2f5" height="9.0" layoutX="-3.0" layoutY="368.0" stroke="#fcf9f9" strokeType="INSIDE" width="600.0" />
+      <Rectangle fx:id="loadRec2" arcHeight="5.0" arcWidth="5.0" fill="#04c61a" height="9.0" layoutX="-3.0" layoutY="368.0" stroke="#f5f4f4" strokeType="INSIDE" width="200.0" />
+      <Text layoutX="218.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Gym Management System">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="195.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAWANA FITNESS CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="278.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V 0.0.1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblLoading" layoutX="209.0" layoutY="338.0" prefHeight="17.0" prefWidth="210.0" textFill="#b20989" />
+   </children>
+</AnchorPane>

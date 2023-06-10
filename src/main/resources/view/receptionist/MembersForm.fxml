@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="722.0" prefWidth="1158.0" style="-fx-background-color: #4d4c4f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.rec.MembersFormController">
+   <children>
+      <TableView fx:id="tblMember" layoutX="23.0" layoutY="82.0" onMouseClicked="#tblMemberOnAction" prefHeight="558.0" prefWidth="1113.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="59.0" text="ID" />
+            <TableColumn fx:id="colFullName" prefWidth="114.0" text="Full Name" />
+            <TableColumn fx:id="colAddress" prefWidth="131.0" text="Address" />
+            <TableColumn fx:id="colAge" prefWidth="122.0" text="Age" />
+            <TableColumn fx:id="colMemship" prefWidth="168.0" text="Membership" />
+            <TableColumn fx:id="colNic" minWidth="4.0" prefWidth="160.0" text="NIC" />
+            <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="150.0" text="Contact" />
+            <TableColumn fx:id="colJoinedDate" minWidth="0.0" prefWidth="206.0" text="Joined Date" />
+         </columns>
+      </TableView>
+
+      <TextField fx:id="txtSearch" layoutX="609.0" layoutY="26.0" prefHeight="36.0" prefWidth="520.0" promptText="🔎 Search" />
+      <Button fx:id="btnAddMember" layoutX="152.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnAddMemberOnAction" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: #08e171;" text="+Add Member" textFill="#170101">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="362.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: #e009e0;" text="Update" textFill="#1e1d1d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPrint" layoutX="947.0" layoutY="663.0" mnemonicParsing="false" onAction="#btnPrintOnAction" prefHeight="36.0" prefWidth="171.0" style="-fx-background-color: #ff00ff;" text="Print Receipt">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gym.controller.admin.employee.UpdateEmployeeFormController">
+   <children>
+      <AnchorPane layoutX="187.0" layoutY="54.0" prefHeight="347.0" prefWidth="384.0" />
+      <AnchorPane layoutX="187.0" layoutY="54.0" prefHeight="347.0" prefWidth="384.0">
+         <children>
+            <AnchorPane layoutX="2.0" layoutY="-14.0" prefHeight="347.0" prefWidth="384.0">
+               <children>
+                  <JFXTextField fx:id="txtEmpJoinedDate" editable="false" layoutX="17.0" layoutY="250.0" prefHeight="25.0" prefWidth="352.0" promptText="Joined Date">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </JFXTextField>
+               </children></AnchorPane>
+            <JFXTextField fx:id="txtempName" layoutX="19.0" layoutY="40.0" prefHeight="25.0" prefWidth="352.0" promptText="Name">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmpAddress" layoutX="19.0" layoutY="87.0" prefHeight="25.0" prefWidth="352.0" promptText="Address">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmpNic" layoutX="19.0" layoutY="136.0" prefHeight="25.0" prefWidth="352.0" promptText="NIC">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmpOccupation" layoutX="19.0" layoutY="274.0" prefHeight="25.0" prefWidth="352.0" promptText="Occupation">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmpContact" layoutX="19.0" layoutY="186.0" prefHeight="25.0" prefWidth="352.0" promptText="Contact">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <Text layoutX="25.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Update / Delete Employee" wrappingWidth="323.13671875">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="128.0" fitWidth="133.0" layoutX="42.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/update_user.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnUpdateEmployee" buttonType="RAISED" layoutX="19.0" layoutY="267.0" onAction="#btnUpdateEmployeeOnAction" prefHeight="50.0" prefWidth="151.0" ripplerFill="#38dd0a" style="-fx-background-color: #f10ce2; -fx-background-radius: 20;" text="UPDATE" textFill="#f5f4f5">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDltEmployee" buttonType="RAISED" layoutX="20.0" layoutY="324.0" onAction="#btnDltEmployeeOnAction" prefHeight="50.0" prefWidth="151.0" ripplerFill="#db1d0b" style="-fx-background-color: #db1d0b; -fx-background-radius: 20;" text="DELETE" textFill="#f5f4f5">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblEmpId" layoutX="26.0" layoutY="222.0" prefHeight="17.0" prefWidth="144.0" />
+      <Text layoutX="42.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emp Id :" wrappingWidth="85.13671875" />
+   </children>
+</AnchorPane>
